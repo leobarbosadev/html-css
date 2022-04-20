@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="iconeac1.ico" type="image/x-icon">
+    <title>Vídeos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video width="560" poster="imagens/capa.png" controls autoplay loop><!--É IMPORTANTE TER O MESMO VÍDEO EM VÁRIOS FORMATOS POIS TEM NAVEGADORES QUE ACEITA UM FORMATO E NÃO ACEITA OUTRO-->
+        <source src="midia/video1.mp4" type="video/mp4">
+        <source src="midia/Video1.m4v" type="video/mp4">
+        <source src="midia/Video1.webm" type="video/webm">
+        <source src="midia/video1.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+    
+    <h1>Inserindo Vídeos do Youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/BOtg6dGTnLc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Inserindo Vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/79854671?h=86f7a7c297&color=ff9933&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>

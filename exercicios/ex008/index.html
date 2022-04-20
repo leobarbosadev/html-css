@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="iconeac1.ico" type="image/x-icon">
+    <title>Formatação de Textos</title>
+    
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Desaque</h2>
+    <p>Nessa frase temos um <b>termo em negrito</b> usando a tag &lt;b&gt; (não semântica)</p> <!--FORMA NÃO SEMÂNTICA-->
+    <p>Nessa frase temos um <strong>termo em destaque</strong> usando a tag &lt;strong&gt; (semântica)</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase temos um <i>termo em itálico</i> usando a tag &lt;i&gt; (não semântica)</p>
+    <p>Nesta frase temos um <em>termo em ênfase</em> usando a tag &lt;em&gt; (semântica)</p>
+    <h2> Texto Marcado</h2>
+    <p>Podemos criar também um <mark>texto marcado</mark> usando a tag &lt;mark&gt;</p><!--A TAG mark VEM POR PADRÃO COM A COR AMARELA, PARA MUDAR A COR DO MARCADOR, COLOCAMOS DENTRO DA TAG mark O PARÂMETRO style QUE É CSS, E DENTRO DE style SELECIONAMOS UM PARÂMETRO DA CSS CHAMADO background-color EXEMPLO ABAIXO-->
+    <p>Podemos ainda, mudar a <mark style="background-color: lime;">cor do marcador.</mark></p>
+    <!--PODEMOS AINDA DENTRO DO head, CRIAMOS UMA TAG style, E DENTRO DESSA TAG FAZEMOS UM SELETOR (CSS) PARA mark, DESSA FORMA, TODA VEZ QUE COLOCARMOS A TAG mark, TODOS ELES FICARÃO DA MESMA COR, NÃO PRECISANDO ASSIM COLOCAR O style DENTRO DE TODAS AS mark QUE TIVER.
+    <style>
+        mark{
+            background-color: aqua;
+        }
+    </style>    
+    -->
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse parágrafo.</p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar um <del>texto como excluído</del> para indicar que ele deve ser lido, mas não considerado.</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar um <ins>texto como inserido</ins> para dar uma ênfase e indicar que ele foi adicionado depois.</p>
+    <p>Existe também o <u>sublinhado</u> com a tag &lt;u&gt; (não semântica)</p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas como do tipo x elevado a 20+30(x<sup>20</sup> + 30)</p>
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas como H<sub>2</sub>O</p>
+
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>O comando <code>document.getElemetById('teste')</code> é escrito em linguagem JavaScript</p>
+    <pre>
+    <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        printf(f'O número {num} é PAR')
+    else:
+        printf(f'O número {num} é ÍMPAR)
+    prinf('Fim do programa')        
+    </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p><!--TAG q SIGNIFICA quote CITAÇÃO EM INGLÊS, ISSO DÁ SENTIDO AO SEU CÓDIGO, MOSTRANDO QUE É UMA CITAÇÃO, NÃO QUEBRA A LINHA-->
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para Leigos:</p>
+    <blockquote cite="https://www.google.com.br/books/edition/HTML_XHTML_e_CSS_Para_Leigos/E8ZtDwAAQBAJ?hl=pt-BR&gbpv=1&dq=Jeff+Noble&printsec=frontcover"><!--ESSA É UMA CITAÇÃO DE BLOCO, UMA CITAÇÃO MAI LONGA QUE A CITAÇÃO SIMPLES E ELA QUEBRA A LINHA E FICA UM POUCO DESLOCADA, INDICANDO QUE É UMA CITAÇÃO, O PARÂMETRO cite(CITANDO) MOSTRA PARA OS MECANISMOS DE BUSCAS QUE ESTÁ SENDO FEITA UMA CITAÇÃO DE UM LIVRO QUE ESTÁ REFERENCIADO NO LINK -->
+        A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+    <p>Tesmos aqui uma representação de endereço <address>Rua das Camélias 000</address></p>
+    <p><bdo dir="rtl">TEXTO INVERTIDO</bdo></p>
+
+</body>
+</html>

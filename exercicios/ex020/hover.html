@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="iconeac1.ico" type="image/x-icon">
+    <title>Exemplo de Hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* NESSE EXEMPLO ESTAMOS USANDO UM EXEMPLO DE FILHO, SIGNIFICA QUE TODOS OS PARAGRAFOS DENTRO DO DIV VÃO REALIZAR ESSA FUNÇÃO, OS QUE ESTÃO FORA NÃO.*/
+        div > p{
+            display: none;
+        }
+
+        div:hover > p{
+            display: block;
+            background-color: red;
+            color: white;
+            width: 300px;
+        }
+
+        div:hover{
+            color: red;           
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO ESCONDIDO!!!</p>
+    </div>
+    <p>Fim do exemplo</p>
+</body>
+</html>

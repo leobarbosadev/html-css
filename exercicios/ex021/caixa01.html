@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="iconeac1.ico" type="image/x-icon">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{
+            background-color: lightblue;
+            height: 300px;
+            width: 300px;
+            
+            /*PODEMOS TAMBÉM SIMPLIFICAR ESSAS PRORIEDADES COM UM SHORTHAND*/
+            /*border-width: 10px;
+            border-style: solid;
+            border-color: darkblue;*/ 
+
+            /*SHORTHAND border SEMPRE NESSA ORDEM width, style, color*/
+            border: 10px solid darkblue;
+
+            /*SHORTHAND padding SEMPRE NESSA POSIÇÃO: top, right, bottom, left*/
+            padding: 10px 10px 10px 10px;
+            
+            /*SE TODAS AS MEDIDAS FOREM IGUAIS padding: 10px;
+            PODEMOS TAMBÉM COLOCAR 2 VALORES EX: padding: 10px 20px; DESSSA FORMA, AS PROPRIEDADE padding-top E padding-bottom FICAM COM 10px E padding-left E padding-right FICAM 20px*/
+            
+            /*SHORTHAND margin SEMPRE NESSA POSIÇÃO: top, right, bottom, left*/
+            margin: 20px auto 40px auto;
+            
+            /*PARA DEIXAR A CAIXA CENTRALIZADA*/
+            /*margin: auto;*/
+            
+            /*SHORTHAND outline SEMPRE NESSA ORDEM width, style, color*/
+            outline: 5px dashed salmon;
+
+        }
+        a{
+            /*cursor: all-scroll;*/
+            
+            border-width: 5px;
+            border-style: dashed;
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Exemplo de caixa block-level</h1>
+    <p>Parágrafos também são exemplos de block-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

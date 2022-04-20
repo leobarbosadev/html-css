@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="iconeac1.ico" type="image/x-icon">
+    <title>Links</title>
+    <style>
+        /*
+        SELETORES PERSONALIZADOS
+        #   = ID
+        .   = CLASS
+        :   = PSEUDO-CLASS
+        ::  = PSEUDO-ELEMENT
+        >   = CHILDREN(FILHO) 
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{/*COR INICIAL DO LINK, ANTES DE SER VISITADO*/
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{/*QUANDO UM LINK JÁ FOI VISITADO*/
+            color: darkred;
+        }
+        a:hover{/*QUANDO PASSA O MOUSE EM CIMA DO LINK ELE MUDA A COR E FICA SUBLINHADO*/
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{/*QUANDO CLICA NO LINK A COR MUDA*/
+            color: yellow;
+        }
+        
+        a::before{/*PSEUDO-ELEMENTO ADICIONA O SÍMBOLO ANTES(before) DO LINK*/
+            content: '☞ ';
+        }
+
+        a::after{/*ADICIONA AS CONFIGURAÇÕES DEPOIS DO LINK*/
+            content: ' [Link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: gray;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul type="none">
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank">Site do Curso em Video</a></li>
+    </ul>
+    
+</body>
+</html>

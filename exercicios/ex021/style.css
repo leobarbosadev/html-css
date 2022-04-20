@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: cadetblue;
+    margin: 0px;
+    text-align: justify;    
+}
+
+
+header{
+    background-color: aquamarine;
+    padding: 10px;
+    margin: 10px;
+}
+
+nav{
+    background-color: rgb(92, 92, 221);
+    padding: 5px;
+    text-align: center;
+    box-shadow: 5px 5px 5px black;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    margin-right: 80px;
+    font-weight: bold;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+main{
+    background-color: lightskyblue;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px 0px;
+}
+
+article{
+    background-color: darkseagreen;
+    padding: 5px;
+}
+
+article > p{
+    padding-right: 5px;
+    text-indent: 20px;
+}
+
+article > aside {
+    background-color: darkcyan;
+}
+
+aside > p{
+    padding-left: 5px;
+}
+
+section > p{
+    padding-right: 5px;
+    text-indent: 20px;
+}
+
+footer{
+    background-color: rgba(0, 0, 255, 0.411);
+    color: white;
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+}
+
+footer > p{
+    margin: 0px;
+}
+
+/*PODEMOS FAZER UMA BOLA CASO NOSSA CAIXA SEJA QUADRADA, FAZEMOS ISSO DA SEGUINTE FORMA*/
+div#bola{
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: white;  
+}
+
+
