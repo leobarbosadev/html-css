@@ -4,19 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de Imagem de fundoe</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
             height: 100vh;
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat cover fixed; 
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-repeat: no-repeat;
-            background-position: center center;
             background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            
+            /* SHORTHAND background
+                color > image > position > repeat > [size] > attachment
+                IMPORTANTE: NA DATA QUE FOI FEITO ESSE EXERCÍCIO(03/05/2022), O size NÃO FUNCIONA NO SHORTHAND, POR ISSO DEVEMOS TIRA-LO E COLOCA-LO SEPARADO. DESSA FORMA:
+                
+                background: black url('imagens/wallpaper002.jpg') no-repeat fixed;
+                background-size: cover;           
+            */
         }
         main{
             background-color: white;
-            width: 500px;
+            max-width: 400px;
             border: 1px solid darkblue;
             border-radius: 20px;
             margin: auto;
