@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --fonte-padrao: 'Sriracha', cursive; 
+    --fonte-titulo:'Passion One', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100vh;
+}
+
+header{
+    height: 250px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h1{
+    font-family: var(--fonte-titulo);
+    font-size: 5em;
+    margin;
+}
+h1::first-letter{
+    font-size:150%
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+p{
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+    font-size: 1.8em;
+    line-height: 2em;
+    max-width: 550px;
+    padding: 30px 15px;
+    text-align: justify;
+    font-size: 3vw;
+    
+}
+
+.textop{
+    background-color: rgba(0, 0, 0, 0.384);
+    background-position: center center;
+    max-width: 37vw;
+    font-size: 3vw;
+    padding-left: 5px;
+    padding-right: 0px;
+
+}
+
+article{
+    box-shadow:  0px 3px 11px black;
+}
+
+#fundo1{
+    background-image: url('imagens/background001.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 70px 20px;
+}
+
+#fundo2{
+    background-image: url('imagens/background002.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 70px 20px;
+}
+
+footer{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+
+}
+
+#rodape{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    text-align: center;
+    padding-top: 20px ;
+    font-weight: normal;
+}
+
+/*strong{
+    font-weight: bolder;
+}*/
