@@ -11,19 +11,35 @@
             padding: 0px;
         }
         #container{
+            height: 100vh;
             background-image: url('imagens/espaco.jpg');
+            background-position: center center;
+            background-size: cover;
+            background-attachment: fixed;
+            position: relative;
+ 
+
         }
         #conteudo{
+            height: 550px;
+            width: 500px;
             background-image: url('imagens/astronauta.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+
         }
     </style>
 </head>
 <body>
-    <section id="container">
-        <article id="conteudo">
-            
-        </article>
-    </section>    
-    
+    <div id="container">
+        <div id="conteudo">
+
+        </div>
+    </div>
+
 </body>
 </html>
