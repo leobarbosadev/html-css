@@ -12,16 +12,34 @@
         table{
             width: 400px;
             border-collapse: collapse;
-
+            position: relative;
         }
         td,th{/*PARA APLICAR BORDA TANTO NO td QUANTO NO th PODE COLOCAR SEPARADO TAMBÉM*/
             border: 1px solid black;
             padding: 10px;
         }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 5px;
+        }
+
         thead,tfoot{/*PARA APLICAR TANTO NO thead QUANTO NO tfoot PODE COLOCAR SEPARADO TAMBÉM*/
-            background-color: rgb(165, 161, 161);
+            background-color: gray;
             color: white;
         }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(odd){/*PODEMOS COLOCAR TAMBÉM O VALOR even DENTRO DOS () */
+            background-color: lightgray;
+        }
+
         td.num{
             text-align: right;
         }
@@ -32,6 +50,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD - CABEÇA DA TABELA
                 TR, TD, TH
             TBODY - CORPO DA TABELA
@@ -41,12 +60,13 @@
         NÃO É OBRIGADO A TER CABEÇA E NEM PÉ
     -->
     <table>
+        <caption>População dos Estados</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width:50px;">População</th>
             <tbody>
                 <tr>
-                    <td>São Paulo</td>
+                    <td> São Paulo</td>
                     <td class="num">46.649.132</td>
                 </tr>
                 <tr>
@@ -153,17 +173,15 @@
                     <td>Tocantins</td>
                     <td class="num">1.607.363</td>
                 </tr>
-
             </tbody>
             <tfoot>
                 <tr>
-                    <th>Total de Habitante</th>
+                    <th scope="row">Total de Habitante</th>
                     <td class="num"><strong>213.317.639</strong></td>
                 </tr>
 
             </tfoot>
         </thead>
     </table>
-    
 </body>
 </html>
