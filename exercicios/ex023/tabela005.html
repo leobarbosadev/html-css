@@ -24,8 +24,14 @@
             border: 1px solid black;
             padding: 8px;
         }
-        .destaque{
-            background-color: chartreuse;
+        .cnome{
+            background-color: aqua;
+        }
+        .csexo{
+            background-color: burlywood;
+        }
+        .cgrupo{
+            background-color: bisque;
         }
     </style>
 </head>
@@ -34,9 +40,10 @@
 
     <table>
         <colgroup>
-            <col class="destaque">
-            <col>
-            <col class="destaque" span="2">
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cgrupo" span="2"> 
+            <!--POSSO CRIAR TAMBÉM UMA CLASSE cgrupo E PASSAR O TERCEIRO col POR EXEMPLO, QUE É CORRESPONDENTE A COLUNA DA IDADE, E COLOCAR O span="n", ONDE n É O NÚMERO DE COLUNAS SEGUIDAS QUE VAI SER APLICADO O ESTILO. EX span="2" O ESTILO SERIA APLICADO NA COLUNA IDADE E PROFISSÃO.-->
         
         </colgroup>
         <caption>Cadastro</caption>
