@@ -8,19 +8,33 @@
 </head>
 <body>
     <h1>Teste de formulário</h1>
-    <form action="cadastro" method="get">
+    <form action="cadastro" method="get" autocomplete="on">
         <p>
             <label for="inome">Nome</label>
-            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome ccompleto" autocomplete="name">
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
         </p>
         <p>
+<!--O ATRIBUTO step(PASSO) INDICA DE QUANTO EM QUANTO O CAMPO DO NÚMERO VAI PULAR, NO EXEMPLO ABAIXO, SERÁ DE 0.5 EM 0.5 EX: 1, 1.5, 2, 2.5
+O ATRIBUTO min E max DELIMITAM O INTERVALO ATÉ ONDE VAI O VALOR DO CAMPO, NO EXEMPLO ABAIXO VAI DE 0 a 10
+O ATRIBUTO value, É O VALOR QUE O CAMPO JÁ SERÁ PREENCHIDO POR PADRÃO AO CARREGAR O FORMULÁRIO.-->
             <label for="imedia">Média</label>
-            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5">
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.5" value="5">
+        </p>
+        <p>
+            <label for="imes">Período Letivo</label>
+            <input type="month" name="mes" id="imes" value="2023-02"> <!--MÊS E ANO-->
+        </p>
+        <label for="dia">Dia da Prova</label>
+        <input type="date" name="mes" id="idia"><!--DIA/MÊS/ANO-->
+        <p>
+            <label for="hora">Horário da Prova</label>
+            <input type="time" name="hora" id="ihora">
         </p>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
+
     </form>
     
 </body>
