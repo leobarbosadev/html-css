@@ -8,14 +8,22 @@
 </head>
 <body>
     <h1>Teste de Formulários</h1>
-    <form action="cadastro.php" method="POST" autocomplete="off">
+<!--PARA TODOS OS autocomplete NOS inputs FUNCIONAREM, PRECISAMOS COLOCAR O autocomplete="on" DENTRO DO FORM-->
+    <form action="cadastro.php" method="POST" autocomplete="on">
         <p>
+<!--O ATRIBUTO required TORNA O CAMPO OBRIGATÓRIO
+O ATRIBUTO minlength DIZ QUAL O NÚMERO MÍNIMO DE CARACTERES DIGITAR NO CAMPO (COMPRIMETO)
+O ATRIBUTO size DETERMINA O TAMANHO DO CAMPO PARA EXIBIÇÃO EX: size="10" SIGNIFICA QUE O CAMPO TEM UM TAMANHO DE EXIBIÇÃO DE 10 CARACTERES 
+O ATRIBUTO placeholder É UMA DICA DRNTRO DO CAMPO ONDE VAI DIGITAR-->
             <label for="iusu">Usuário:</label>
-            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="nome do usuário">
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="10" placeholder="nome do usuário" autocomplete="username">
         </p>
         <p>
+<!--NO FORM, O ATRIBUTO autocomplete SÓ ACEITA OS VALORES on E off 
+GERALMETE FORMULÁRIOS TEM O autocomplete="on" E NOS inputs O autocomplete, COLOCAMOS O autocomplete CORRESPONDENTE AO CAMPO EX: NO input ONDE PEDIMOS NOME DE USUÁRIO, COLOCAMOS UM autocomplete="username"-->
             <label for="isenha">Senha:</label>
-            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20">
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" autocomplete="current-password">
+<!--PARA O CAMPO SENHA TEMOS 2 TIPOS DE autocompelte: O autocomplete="current-password" PARA DIGITAR A SENHA USUAL E autocomplete="new-password" PARA QUANDO ESTAMOS EM UM FORMULÁRIO DE CADASTRO-->
         </p>
         <p>
             <input type="submit" value="Enviar">
