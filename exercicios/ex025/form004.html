@@ -31,7 +31,7 @@
             <legend id="legend">Dados pessoais</legend>
             <p>
                 <label for="inome">Nome</label>
-                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20" required autocomplete="name">
             </p>
             <p>
                 <label for="iemal">E-mail</label>
@@ -39,7 +39,8 @@
             </p>
             <p>
                 <label for="itel">Telefone</label>
-                <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="[0-9]{4,5}-[0-9]{4}$" placeholder="(xx)xxxx-xxxx">
+                <input type="tel" name="tel" id="itel" autocomplete="tel" 
+                pattern="^\(\d{2}\)[0-9]{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx"> <!--OS DÍGITOS PODEM SER REPRESENTADOS ASSIM [0-9] OU ASSIM \d-->
             </p>
         </fieldset>
 <!--ESTUDAR MAIS SOBRE RegEx-->
