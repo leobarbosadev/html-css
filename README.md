@@ -8,3 +8,5 @@
 <a href="https://leobarbosas.github.io/html-css/exercicios/ex002/index.html">Executar o exercício 002</a>
 
 <a href="https://leobarbosas.github.io/html-css/exercicios/ex003/index.html">Executar o exercício 003</a>
+
+<a href="https://leobarbosas.github.io/html-css/exercicios/ex026/mq002/index.html"> Executar o exercício 026</a>
