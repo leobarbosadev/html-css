@@ -9,7 +9,7 @@ body{
 }
 
 main{
-    width: 90vw;
+    width: 90vw; /*COM O max NA CONFIGURAÇÃO DE ESTILO GERAL (style.css), NÃO APLICA AS CONFIGURAÇÕES DE IMPRESSÃO*/
     border: 2px solid black;
 }
 
@@ -25,7 +25,6 @@ main h1{
     text-shadow: none;
     color: black;
 }
-
 
 img#telefone{display: none;}
 img#tablet{display: none;}
