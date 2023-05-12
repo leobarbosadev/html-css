@@ -11,7 +11,7 @@ body, html{
 }
 
 header{
-    background-color: rgb(156, 33, 33);
+    background-color: lightgreen
 }
 
 header > h1{
@@ -32,13 +32,13 @@ menu a{ /*OU ENTÃO menu > ul > li > a*/
     padding: 10px;
     text-decoration: none;
     text-align: center;
-    background-color: rgb(71, 71, 71);
+    background-color: rgb(46, 147, 230);
     color: white;
-    border-top: 2px solid gray;
+    border-top: 2px solid rgb(31, 87, 31);
 } 
 
 menu a:hover{
-    background-color: grey;
+    background-color: rgb(35, 65, 240);
 }
 
 main{
