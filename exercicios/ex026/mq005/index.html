@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilos/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/meqia-queries.css">
+
     <title>Media Queries</title>
 </head>
-<body>
+<body onresize="mudouTamanho()"> <!--ISSO SIGINIFA QUANDO EU MUDAR O TAMANHO DO SITE (RESOLVER O PROBLEMA DO MENU HAMBURGUER SUMINDO AO ENCOLHER)-->
     <header>
         <h1>MEU SITE</h1>
         <i id="burguer" class="material-icons-round" onclick="clickMenu()">menu</i>
@@ -34,10 +36,18 @@
         </article>
     </main>
     <script>
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){ //SE A LARGURA DA TELA
+                itens.style.display = 'block'
+            } else{
+                itens.style.display = 'none'
+            }
+        }
+
         function clickMenu(){
-           if (itens.style.display == 'block'){ /*EM JavaScript SE LÊ IGUAL*/
-            itens.style.display = 'none' /*EM JavaScript SE LÊ RECEBE*/
-           } else {
+           if (itens.style.display == 'block'){ //EM JavaScript SE LÊ IGUAL
+            itens.style.display = 'none' //EM JavaScript SE LÊ RECEBE
+           } else{
             itens.style.display = 'block'
            }
         }

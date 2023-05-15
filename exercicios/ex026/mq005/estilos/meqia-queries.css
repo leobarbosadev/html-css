@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px){
+    i#burguer{
+        display: none;
+    }
+
+    main{
+        width: 768px;
+    }
+
+    menu{
+        display: block;
+        text-align: center;
+    }
+    
+    menu li{ /*POSSO COLOCAR ASSIM TAMBÉM menu > ul > li*/
+        display: inline-block;
+    }
+
+    menu > ul > li > a{
+        width: 15vw;
+    }
+
+    /* ATRIBUTOS PARA DIVIDIR O TEXTO EM COLUNAS
+    article#coluna{
+        column-count: 2;
+    }*/
+}
