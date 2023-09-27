@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#corpo1{
+    background-color: rgb(211, 210, 210);
+}
+
+#corpo2{
+    background-color: rgb(132, 216, 132);
+    color: rgb(1, 63, 1);
+
+}
+
+#corpo3{
+    background-color: rgb(238, 238, 187);
+    color: rgb(129, 118, 18);
+}
